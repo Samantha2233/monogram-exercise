@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { HeroSection } from '@/components/HeroSection/HeroSection'
+import { JavaScriptSection } from '@/components/JavaScriptSection/JavaScriptSection'
+import { LogoSection } from '@/components/LogoSection/LogoSection'
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
         <link href="/dist/output.css" rel="stylesheet" />
       </Head>
       <HeroSection/>
+      <JavaScriptSection/>
+      <LogoSection/>
     </>
   )
 }

@@ -20,6 +20,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
 }
 
 h1 {
@@ -27,7 +28,6 @@ h1 {
   font-weight: 900;
   letter-spacing: -0.039em;
   line-height: 152px;
-  font-family: 'Inter', sans-serif;
 }
 
 a {
