@@ -1,3 +1,4 @@
+import { MouseAnimation } from "./MouseAnimation";
 import { Rectangles } from "./Rectangles";
 
 export function HeroSection() {
@@ -21,9 +22,10 @@ export function HeroSection() {
                 >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit. 
                 </p>
+                <MouseAnimation/>
             </div>
            <Rectangles/>
-           
+
         </div>
     )
 }
