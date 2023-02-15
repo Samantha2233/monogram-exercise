@@ -17,14 +17,12 @@ export function HeroSection() {
                         101
                     </span>
                 </h1>
-                <p className="p-0 text-[#757575] max-w-[675px] tracking-[.005em] leading-[195.5%] text-[18px] 
-                    lg:pl-[178px] lg:pt-[44px]"
-                >
+                <p className="p-0 text-[#757575] max-w-[675px] tracking-[.005em] leading-[195.5%] text-[18px] lg:pl-[178px] lg:pt-[44px]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit. 
                 </p>
                 <MouseAnimation/>
             </div>
-           <Rectangles/>
+           <Rectangles recOnePath='/rectangles/Rectangle-1.png' recTwoPath='/rectangles/Rectangle-2.png'  />
         </div>
     )
 }
