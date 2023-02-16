@@ -67,31 +67,31 @@ export const desktopLogos = [
 
 export const mobileLogos = [
     {
-        name: 'react',
-        width: 200,
-        height: 54,
-        top: '580px',
-        opacity: 1
-    },
-    {
         name: 'nextjs',
         width: 134,
         height: 78,
-        top: '680px',
-        opacity: 1
+        top: '580px',
+        opacity: .5
     },
     {
         name: 'vue',
         width: 180,
         height: 65,
-        top: '820px',
-        opacity: 1
+        top: '715px',
+        opacity: .5
+    },
+    {
+        name: 'react',
+        width: 200,
+        height: 54,
+        top: '840px',
+        opacity: .5
     },
     {
         name: 'svelte',
         width: 220,
         height: 54,
-        top: '950px',
-        opacity: 1
+        top: '960px',
+        opacity: .5
     },
 ]

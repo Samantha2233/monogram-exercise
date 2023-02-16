@@ -34,8 +34,8 @@ export function LogoSection() {
 
     return (
         // Black box
-        <div className='bg-[#151515] w-[100%] h-[200vh] mt-[-200px]' id='black-box'>
-            {/* Relative box for Desktop animation */}
+        <div className='bg-[#151515] w-[100%] h-[160vh]  lg:h-[160vh] mt-[-200px]' id='black-box'>
+            {/* Relative box for Desktop Logo animation */}
             <div className='hidden w-[100%] h-[100%] relative md:block'>
                 {isShowing && desktopLogos?.map((logo, idx )=> {
                     return (
@@ -45,7 +45,7 @@ export function LogoSection() {
                     )
                 })}
             </div>
-            {/* Mobile  */}
+            {/* Relative box for Mobile Logo animation  */}
             <div className=' w-[100%] h-[100%] relative md:hidden'>
                 {isShowing && mobileLogos?.map((logo, idx )=> {
                     return (
