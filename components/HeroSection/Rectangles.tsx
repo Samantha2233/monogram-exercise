@@ -3,12 +3,11 @@ import Image  from 'next/image'
 interface RectanglesType {
     recOnePath: string;
     recTwoPath: string;
-    rotate?: number;
 }
 
-export function Rectangles({recOnePath, recTwoPath, rotate = 0 }: RectanglesType) {
+export function Rectangles({recOnePath, recTwoPath }: RectanglesType) {
     return (
-        <div className={`relative min-w-[95px] ml-[70px] h-[365px] lg:min-w-[300px] lg:ml-0 rotate-${rotate}`}>
+        <div className={`relative min-w-[95px] ml-[70px] h-[365px] lg:min-w-[300px] lg:ml-0`}>
             <Image 
                 src={recOnePath}
                 width={280}
@@ -24,14 +23,14 @@ export function Rectangles({recOnePath, recTwoPath, rotate = 0 }: RectanglesType
                 className="absolute h-[223px] top-[40px] left-[-4px] w-auto lg:top-[153px] lg:left-[160px] lg:h-[670px]"
             />
             <Image 
-                src='/hero-rectangles/Rectangle-3.png' 
+                src='/rectangles/Rectangle-3.png' 
                 width={280}
                 height={479}
                 alt='Rectangular design element 3'
                 className="absolute h-[159px] top-[210px] left-[-62px] w-auto lg:top-[638px] lg:h-[479px]"
             />
             <Image 
-                src='/hero-rectangles/Rectangle-4.png' 
+                src='/rectangles/Rectangle-4.png' 
                 width={280}
                 height={662}
                 alt='Rectangular design element 4'
