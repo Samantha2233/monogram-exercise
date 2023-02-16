@@ -12,6 +12,7 @@ interface LogoType {
     left?: string;
     opacity: number;
     mobile?: boolean;
+    [key: string]: any
 }
 
 export function LogoSection() {    
@@ -30,7 +31,6 @@ export function LogoSection() {
             observer.observe(blackBox);
         }
     }, [])
-
 
     return (
         // Black box
