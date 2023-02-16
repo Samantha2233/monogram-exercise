@@ -12,7 +12,6 @@ interface LogoType {
     left?: string;
     opacity: number;
     mobile?: boolean;
-    [key: string]: any
 }
 
 export function LogoSection() {    
@@ -49,7 +48,7 @@ export function LogoSection() {
             <div className=' w-[100%] h-[100%] relative md:hidden'>
                 {isShowing && mobileLogos?.map((logo, idx )=> {
                     return (
-                        <LogoContainer key={idx} left={'50%'} right={logo.right} top={logo.top} opacity={logo.opacity} mobile={true}>
+                        <LogoContainer key={idx}>
                             <Image src={`/logos/${logo.name}.png`} width={logo.width} height={logo.height} alt={`${logo.name} logo`}/>
                         </LogoContainer>
                     )
