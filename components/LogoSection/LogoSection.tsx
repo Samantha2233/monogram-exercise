@@ -101,7 +101,7 @@ const setLogoAnimation = ({top, left, right, opacity, mobile, delay}: LogoType) 
         left: ${left}px;
         right: ${right}px;
         animation: ${animation};
-        animation-duration: .5s;
+        animation-duration: ${mobile ? '.5s' :  '5s'};
         animation-fill-mode: forwards;
         animation-delay: ${delay ? (delay * .5) + 's' : undefined}
     `
