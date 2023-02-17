@@ -14,7 +14,7 @@ export function MarkupSection() {
                     <Rectangles recOnePath='/rectangles/Rectangle-a.png' recTwoPath='/rectangles/Rectangle-b.png'/>
                 </div>
             </div>
-                <Image src='/blocks.png' width={1920} height={720} alt='blocks design' className='w-[100%] max-w-[1750px] pt-[100px] lg:pt-[300px] xl:pt-[150px]' />
+                <Image src='/blocks.png' width={1920} height={720} alt='blocks design' className='w-[150%] md:w-[100%] max-w-[1750px] pt-[100px] lg:pt-[300px] xl:pt-[150px]' />
             </section>
     )
 }
