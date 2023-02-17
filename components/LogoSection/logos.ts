@@ -67,19 +67,20 @@ export const desktopLogos = [
 
 export const mobileLogos = [
     {
-        name: 'mobile/nextjs',
-        width: 183,
-        height: 65,
-        top: 580,
-        opacity: .5
-    },
-    {
         name: 'mobile/vue',
         width: 165,
         height: 44,
-        top: 715,
+        top: 600,
         opacity: .5
     },
+    {
+        name: 'mobile/nextjs',
+        width: 183,
+        height: 65,
+        top: 705,
+        opacity: .5
+    },
+  
     {
         name: 'mobile/react',
         width: 183,

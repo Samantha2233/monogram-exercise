@@ -23,19 +23,22 @@ export function LogoSection() {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    console.log('TRIGGERED')
                     setIsShowing(true)
                 }
             });
         });
-        const blackBox = document.querySelector('#black-box')
-        if(blackBox) {
-            observer.observe(blackBox);
+        const animationTrigger = document.querySelector('#animation-trigger')
+        if(animationTrigger) {
+            observer.observe(animationTrigger);
         }
     }, [])
 
     return (
         // Dark box
-        <section className='bg-[#151515] w-[100%] h-[160vh] lg:h-[200vh] min-[1500px]:h-[160vh] mt-[-200px]' id='black-box'>
+        <section className='bg-[#151515] relative w-[100%] h-[160vh] lg:h-[200vh] min-[1500px]:h-[160vh] mt-[-200px]'>
+            <div className='absolute h-[100px] mt-[700px]' id='animation-trigger'></div>
+           
             {/* Relative box for Desktop Logo animation */}
             <div className='hidden relative w-[100%] h-[100%]  md:block'>
                 {isShowing && desktopLogos?.map((logo, idx )=> {
@@ -47,14 +50,16 @@ export function LogoSection() {
                 })}
             </div>
             {/* Relative box for Mobile Logo animation  */}
-            <div className=' w-[100%] h-[100%] relative flex justify-center md:hidden'>
-                {isShowing && mobileLogos?.map((logo, idx )=> {
-                    return (
-                        <LogoContainer key={idx} left={'50%'} top={logo.top} opacity={logo.opacity} delay={idx} mobile={true}>
-                            <Image src={`/logos/${logo.name}.png`} width={logo.width} height={logo.height} alt={`${logo.name} logo`}/>
-                        </LogoContainer>
-                    )
-                })}
+            <div className=' w-[100%] h-[100%] md:hidden'>
+                <div className='border-2 mx-auto w-[210px]'>
+                    {isShowing && mobileLogos?.map((logo, idx )=> {
+                        return (
+                            <LogoContainer key={idx} left={'50%'} top={logo.top} opacity={logo.opacity} delay={idx} mobile={true}>
+                                <Image src={`/logos/${logo.name}.png`} width={logo.width} height={logo.height} alt={`${logo.name} logo`}/>
+                            </LogoContainer>
+                        )
+                    })}
+                </div>
             </div>
         </section>
     )
@@ -98,8 +103,8 @@ const setLogoAnimation = ({top, left, right, opacity, mobile, delay}: LogoType) 
         animation: ${animation};
         animation-duration: .5s;
         animation-fill-mode: forwards;
-        animation-delay: ${delay ? (delay * .2) + 's' : undefined}
-        `
+        animation-delay: ${delay ? (delay * .5) + 's' : undefined}
+    `
 }
 
 const LogoContainer = styled.div`
