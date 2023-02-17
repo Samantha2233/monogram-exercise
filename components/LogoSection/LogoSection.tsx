@@ -7,11 +7,12 @@ interface LogoType {
     name: string;
     width: number;
     height: number;
-    top: string;
-    right?: string;
-    left?: string;
+    top: number;
+    right?: number;
+    left?: number;
     opacity: number;
     mobile?: boolean;
+    delay?: number;
     [key: string]: any
 }
 
@@ -46,10 +47,10 @@ export function LogoSection() {
                 })}
             </div>
             {/* Relative box for Mobile Logo animation  */}
-            <div className=' w-[100%] h-[100%] relative md:hidden'>
+            <div className=' w-[100%] h-[100%] relative flex justify-center md:hidden'>
                 {isShowing && mobileLogos?.map((logo, idx )=> {
                     return (
-                        <LogoContainer key={idx} left={'50%'} top={logo.top} opacity={logo.opacity} mobile={true}>
+                        <LogoContainer key={idx} left={'50%'} top={logo.top} opacity={logo.opacity} delay={idx} mobile={true}>
                             <Image src={`/logos/${logo.name}.png`} width={logo.width} height={logo.height} alt={`${logo.name} logo`}/>
                         </LogoContainer>
                     )
@@ -59,29 +60,46 @@ export function LogoSection() {
     )
 }
 
-const setLogoAnimation = ({top, left, right, opacity, mobile}: LogoType) => {
-    const animation = keyframes`
-        0% {
-            top: 0px;
-            filter: drop-shadow(0px -32px 30px white);
-            opacity: 1;
-        }
-        100% {
-            top: ${top};
-            filter: drop-shadow(0px 0px 20px white);
-            opacity: ${opacity};
-        }
-    `
+const setLogoAnimation = ({top, left, right, opacity, mobile, delay}: LogoType) => {
+    let animation
+
+    if(mobile) {
+        animation = keyframes`
+            0% {
+                top: ${top + 50}px;
+                filter: drop-shadow(0px -32px 30px white);
+                opacity: 0;
+            }
+            100% {
+                top: ${top}px;
+                filter: drop-shadow(0px 0px 20px white);
+                opacity: ${opacity};
+            }
+        `
+    } else {
+        animation = keyframes`
+            0% {
+                top: 0px;
+                filter: drop-shadow(0px -32px 30px white);
+                opacity: 1;
+            }
+            100% {
+                top: ${top}px;
+                filter: drop-shadow(0px 0px 20px white);
+                opacity: ${opacity};
+            }
+        `
+    }
 
     return css`
         position: absolute;
-        left: ${left};
-        right: ${right};
+        left: ${left}px;
+        right: ${right}px;
         animation: ${animation};
-        animation-duration: 5s;
+        animation-duration: .5s;
         animation-fill-mode: forwards;
-        transform: ${ mobile ? 'translate(-50%)' : undefined}
-    `
+        animation-delay: ${delay ? (delay * .2) + 's' : undefined}
+        `
 }
 
 const LogoContainer = styled.div`
