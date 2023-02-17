@@ -3,7 +3,7 @@ import { Rectangles } from "./Rectangles";
 
 export function HeroSection() {
     return (
-        <div className="flex flex-col-reverse items-center justify-end p-[10px] text-center lg:flex-row lg:p-0 lg:text-left lg:items-start lg:justify-center">
+        <section className="flex flex-col-reverse items-center justify-end p-[10px] text-center lg:flex-row lg:p-0 lg:text-left lg:items-start lg:justify-center">
             <div>
                 <h1 className="p-0 text-[60px] lg:pt-[126px] lg:pl-[126px] lg:text-xl" >jamstack
                     <span className=" 
@@ -23,6 +23,6 @@ export function HeroSection() {
                 <MouseAnimation/>
             </div>
            <Rectangles recOnePath='/rectangles/Rectangle-1.png' recTwoPath='/rectangles/Rectangle-2.png'  />
-        </div>
+        </section>
     )
 }

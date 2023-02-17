@@ -33,10 +33,10 @@ export function LogoSection() {
     }, [])
 
     return (
-        // Black box
-        <div className='bg-[#151515] w-[100%] h-[160vh] lg:h-[200vh] min-[1500px]:h-[160vh] mt-[-200px]' id='black-box'>
+        // Dark box
+        <section className='bg-[#151515] w-[100%] h-[160vh] lg:h-[200vh] min-[1500px]:h-[160vh] mt-[-200px]' id='black-box'>
             {/* Relative box for Desktop Logo animation */}
-            <div className='hidden w-[100%] h-[100%] relative md:block'>
+            <div className='hidden relative w-[100%] h-[100%]  md:block'>
                 {isShowing && desktopLogos?.map((logo, idx )=> {
                     return (
                         <LogoContainer key={idx} left={logo.left} right={logo.right} top={logo.top} opacity={logo.opacity}>
@@ -55,7 +55,7 @@ export function LogoSection() {
                     )
                 })}
             </div>
-        </div>
+        </section>
     )
 }
 

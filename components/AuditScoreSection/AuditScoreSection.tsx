@@ -20,8 +20,8 @@ export function AuditScoreSection() {
     }, [])
 
     return (
-        <div  className='bg-[#151515] relative h-[180vh] xl:h-[170vh] min-[1400px]:h-[140vh] ' id='audit-section'> 
-            <div className={styles.greenBox} >
+        <section  className='bg-[#151515] relative h-[180vh] xl:h-[170vh] min-[1400px]:h-[140vh] ' id='audit-section'> 
+            <div className={styles.greenBox}>
                 <div className="flex flex-col items-center relative h-[100vh]">
                     <h1 className='text-[#EFFFE2] text-[60px] text-center pt-[100px] tracking-[-0.039em] leading-[65px] lg:pb-[30px] lg:text-[76px]'>top audit scores</h1>
                     {/* Score Circle Meters */}
@@ -49,6 +49,6 @@ export function AuditScoreSection() {
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

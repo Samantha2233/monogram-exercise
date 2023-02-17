@@ -3,7 +3,7 @@ import { Rectangles } from "../HeroSection/Rectangles";
 
 export function MarkupSection() {
     return (
-        <div className='flex flex-col items-center max-w-[1920px] pt-[100px] sm:pt-[200px] md:pt-[500px] lg:pt-[600px] xl:pt-[400px]'>
+        <section className='flex flex-col items-center max-w-[1920px] pt-[100px] sm:pt-[200px] md:pt-[500px] lg:pt-[600px] xl:pt-[400px]'>
             <div className="flex flex-col-reverse items-center p-[10px] lg:flex-row lg:text-left lg:justify-between xl:justify-around w-[100%] ">
                 <div className='p-[10px] min-[1090px]:pl-[116px]'>
                     <h1 className='text-[60px] lg:pb-[69px] sm:text-center lg:text-xl '>markup</h1>
@@ -15,6 +15,6 @@ export function MarkupSection() {
                 </div>
             </div>
                 <Image src='/blocks.png' width={1920} height={720} alt='blocks design' className='w-[100%] max-w-[1750px] pt-[100px] lg:pt-[300px] xl:pt-[150px]' />
-            </div>
+            </section>
     )
 }
