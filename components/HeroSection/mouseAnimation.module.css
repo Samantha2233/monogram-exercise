@@ -1,10 +1,7 @@
 .mouse {
     offset-path: path("M40.1848 0.399933C107.824 81.6444 83.459 202.349 41.4984 276.4C-24.354 392.615 -0.0856094 459.793 41.5468 535.157");
-    offset-rotate: auto;
     animation: scrollDown 5s ease-in-out;
     transform: rotate(-48deg);
-    animation-delay: calc(var(--scroll) * 1s);
-    animation-timeline: scroll();
     animation-fill-mode: forwards;
 }
 
