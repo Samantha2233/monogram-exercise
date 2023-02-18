@@ -41,7 +41,7 @@ export function APISection() {
                                 supabase   prismic
                             </APISphere>
                         </PresentationControls>
-                        <OrbitControls/>
+                        <OrbitControls enableZoom={false}/>
                     </Canvas>
                 </div>
             </div>
