@@ -5,7 +5,7 @@ export function MouseAnimation() {
         <div className='hidden pl-[372px] pt-[128px] lg:block overflow-hidden' >
             <svg width="183" height="540" viewBox="0 0 123 580" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {/* Line */}
-                <path d="M40.1848 0.399933C107.824 81.6444 83.459 202.349 41.4984 276.4C-24.354 392.615 -0.0856094 459.793 41.5468 535.157" stroke="#232323" stroke-dasharray="4 4"/>
+                <path d="M40.1848 0.399933C107.824 81.6444 83.459 202.349 41.4984 276.4C-24.354 392.615 -0.0856094 459.793 41.5468 535.157" stroke="#232323" strokeDasharray="4 4"/>
                 {/* Arrow */}
                 <path d="M11.1966 530.326L43.4075 539.363L51.0547 507.616" stroke="#232323"/>
                 {/* Mouse */}

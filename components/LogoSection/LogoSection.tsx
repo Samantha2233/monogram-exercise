@@ -23,7 +23,6 @@ export function LogoSection() {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log('TRIGGERED')
                     setIsShowing(true)
                 }
             });
