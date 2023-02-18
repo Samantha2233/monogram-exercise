@@ -37,11 +37,11 @@ export function APISection() {
                             azimuth={[-Math.PI / 1.4, Math.PI / 2]}
                         >
                             {/* R3F Sphere w/ text band */}
-                            <APISphere position={[0, 0, 0]} fontSizing={200}>
-                                supabase   prismic
+                            <APISphere position={[0, 0, 0]} fontSizing={150}>
+                                prismic    supabase   JSON
                             </APISphere>
                         </PresentationControls>
-                        <OrbitControls enableZoom={false}/>
+                        <OrbitControls enableZoom={false}/>  
                     </Canvas>
                 </div>
             </div>
