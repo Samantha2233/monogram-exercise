@@ -7,7 +7,7 @@ import { APISphere } from "./APISphere";
 export function APISection() {
     return (
         <section>
-            <div className="flex flex-col items-center bg-[#151515] relative h-[520px] md:h-[570px]  lg:h-[670px]">
+            <div className="flex flex-col items-center relative h-[520px] md:h-[570px]  lg:h-[670px]  bg-[#151515]">
                 <h1 className='text-white text-[60px] lg:pb-[63px] lg:text-xl'>api</h1>
                 <p className="p-[10px] text-white text-[18px] max-w-[760px] tracking-[.005em] leading-[38.8px] md:text-[24px] text-center">At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!</p>
                 {/* 3D API Sphere & Glowy Background*/}
@@ -22,13 +22,6 @@ export function APISection() {
                             position={[-100, 100, -70]}
                             angle={Math.PI / 6}
                         />
-                        {/* TODO: add light ble light */}
-                        {/* <spotLight
-                            intensity={3}
-                            position={[500, -200, -70]}
-                            angle={Math.PI / 6}
-                            color='#44DBFF'
-                        /> */}
                         <PresentationControls
                             global
                             config={{ mass: 2, tension: 500 }}
@@ -45,7 +38,6 @@ export function APISection() {
                     </Canvas>
                 </div>
             </div>
-            <Image src='/squiggly-dark.png' width={1512} height={214} alt='squiggly design' className='w-[100%]' aria-hidden='true'/>
         </section>
     )
 }

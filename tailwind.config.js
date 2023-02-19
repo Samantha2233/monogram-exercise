@@ -17,6 +17,9 @@ module.exports = {
       sm: "450px",
     },
     extend: {
+      dropShadow: {
+        white: "0px 0px 20px white",
+      },
       keyframes: {
         type: {
           "0%": { width: 0 },

@@ -4,7 +4,7 @@ import { TypingAnimation } from "./TypingAnimation";
 export function JavaScriptSection() {
     return (
         <section className='
-            animate-fadeInFromBottom delay-2.5s fill-mode-both
+            animate-fadeInFromBottom delay-2s fill-mode-both
             pt-[30px] flex justify-center relative z-50 
         '>
             <div>
