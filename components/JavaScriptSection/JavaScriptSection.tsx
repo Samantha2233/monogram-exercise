@@ -3,7 +3,10 @@ import { TypingAnimation } from "./TypingAnimation";
 
 export function JavaScriptSection() {
     return (
-        <section className='pt-[30px] flex justify-center relative z-50'>
+        <section className='
+            animate-fadeInFromBottom delay-2.5s fill-mode-both
+            pt-[30px] flex justify-center relative z-50 
+        '>
             <div>
                 <Image src='/orange-square.png' width={1397} height={893} alt='Background gradient design' className='p-[10px] h-[350px] sm:h-[auto]'/>
             </div>

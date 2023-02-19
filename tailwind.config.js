@@ -18,19 +18,33 @@ module.exports = {
     },
     extend: {
       keyframes: {
-        scrollMousePt1: {},
-        scrollMousePt2: {},
         type: {
           "0%": { width: 0 },
           "100%": { width: "100%" },
         },
+        fadeInFromBottom: {
+          "0%": {
+            marginTop: "30px",
+            opacity: 0,
+          },
+          "100%": {
+            marginTop: 0,
+            opacity: 1,
+          },
+        },
       },
       animation: {
-        scrollMousePt1: "scrollMousePt1 5s ease-in-out ",
-        scrollMousePt2: "scrollMousePt2 5s ease-in-out ",
         type: "type 7.5s steps(60, end)",
+        fadeInFromBottom: "fadeInFromBottom 1s ease-in-out",
+      },
+      animationDelay: {
+        "1.5s": "1.5s",
+        "2s": "2s",
+        "2.5s": "2.5s",
+        "3s": "3s",
+        "7s": "7s",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
