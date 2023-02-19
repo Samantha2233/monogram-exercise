@@ -80,6 +80,7 @@ const setRectangleAnimation = ({top, left, delay}: RectangleContainerType) => {
         position: absolute;
         left: ${left}px;
         width: 100%;
+        opacity: 0;
         animation: ${animation};
         animation-delay: ${delay + 's'};
         animation-duration: .5s;
