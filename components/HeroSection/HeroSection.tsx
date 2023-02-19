@@ -1,5 +1,5 @@
 import { MouseAnimation } from "./MouseAnimation";
-import { Rectangles } from "./Rectangles";
+import { Rectangles } from "../Rectangles";
 
 export function HeroSection() {
     return (
