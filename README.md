@@ -5,11 +5,11 @@
 
 [:envelope: Recommendation letter from Echobind Senior Engineer](/public/samantha-shackelford--monogram--20230210.pdf)
 
-:rainbow: [Deployed Project Link](https://monogram-exercise-seven.vercel.app/)
-
 Hello! My name is Sami :) I'm a Front End Developer with 3 years of professional experience. 
 
 This has been an incredibly fun challenge to work on! First, I focused on laying out the UI to match the mockups, then had a good time experimenting with adding animations through out the site along with an R3F element!
+
+[:rainbow: Deployed Project Link](https://monogram-exercise-seven.vercel.app/)
 
 ## Tech
 - Next.js
