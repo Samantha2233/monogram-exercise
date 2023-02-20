@@ -20,7 +20,7 @@ This has been an incredibly fun challenge to work on! First, I focused on laying
 ## Animations
 - Hero Section Rectangles & words fading in
 - Mouse scrolling down the squiggle
-- Typing in the Retro Computer
+- Typing animation on the Retro Computer
 - Logos fading in on mobile
 - R3F sphere / text band rotating
 - Audit score meters interpolating from 0 - 100 

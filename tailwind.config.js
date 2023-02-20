@@ -35,16 +35,37 @@ module.exports = {
             opacity: 1,
           },
         },
+        paddingAnim: {
+          "0%": {
+            paddingTop: "150px",
+          },
+          "100%": {
+            paddingTop: 0,
+          },
+        },
+        fadeIn: {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
       },
       animation: {
         type: "type 7.5s steps(60, end)",
         fadeInFromBottom: "fadeInFromBottom 1s ease-in-out",
+        paddingAnim: "paddingAnim 1s ease-in-out",
+        fadeIn: "fadeIn 1s ease-in-out",
       },
       animationDelay: {
+        "1s": "1s",
         "1.5s": "1.5s",
         "2s": "2s",
         "2.5s": "2.5s",
         "3s": "3s",
+        "3.5s": "3.5s",
+        "4s": "4s",
         "7s": "7s",
       },
     },

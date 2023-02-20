@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import Image from "next/image";
-import styled, { css, keyframes } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components';
 import { APISection } from '../APISection/APISection';
 import { mobileLogos } from './logos';
 
@@ -39,68 +39,101 @@ export function LogoAndAPISection() {
         <div className='mt-[-200px] relative'>
             {/* Animation trigger */}
             <div className='absolute h-[100px] mt-[700px]' id='animation-trigger'></div>
+            
             {/*  L O G O   S E C T I O N  */}
             {/* Lines / Columns */}
-            <section className='justify-center bg-[#151515] hidden md:flex'>
+            <section className='justify-center bg-[#151515] hidden md:flex h-[1050px] lg:h-[1550px] '>
                 {/* Column 1 */}
-                <div className='
-                        px-[20px] 
-                        border-x border-dashed border-slate-700
-                        w-[25%] lg:w-[20%]
-                        flex flex-col items-center 
-                    '>
-                        <Image 
-                            src={`/logos/react.png`} width={183} height={38} alt={`react logo`}
-                            className='mt-[450px] lg:mt-[650px] drop-shadow-white'
-                        />
-                        <Image src={`/logos/svelte.png`} width={220} height={42} alt={`svelte logo`}
-                            className='mt-[250px] opacity-40 drop-shadow-white'
-                        />
-                </div>
-                {/* Column 2 */}
-                <div className='
-                        px-[20px] w-[25%] lg:w-[20%]
-                        flex flex-col items-center
-                    '>
-                        <Image 
-                            src={`/logos/nextjs.png`} width={183} height={64} alt={`svelte logo`}
-                            className='mt-[550px] md:mt-[650px] drop-shadow-white'
-                        />
-                        <Image 
-                            src={`/logos/react.png`} width={183} height={38} alt={`react logo`}
-                            className='mt-[200px] md:mt-[400px] opacity-30 drop-shadow-white'
-                        />
-                </div>
-                {/* Column 3 */}
-                <div className='
-                        border-l border-dashed border-slate-700
-                        px-[20px] w-[25%] lg:w-[20%]
-                        flex flex-col items-center
-                    '>
-                        <Image 
-                            src={`/logos/vue.png`} width={163} height={44} alt={`svelte logo`}
-                            className='mt-[500px] md:mt-[850px] opacity-40 drop-shadow-white'
-                        />
-                </div>
-                {/* Column 4 */}
-                <div className='
-                        border-x border-dashed border-slate-700
-                        px-[20px] w-[25%] lg:w-[20%]
-                        flex flex-col items-center
-                    '>
-                        <Image 
-                            src={`/logos/nextjs.png`} width={183} height={64} alt={`svelte logo`}
-                            className='mt-[450px] md:mt-[350px] lg:mt-[650px]  xl:mt-[500px] drop-shadow-white'
-                        />
-                        <Image 
-                            src={`/logos/react.png`} width={183} height={38} alt={`react logo`}
-                            className='mt-[200px] md:mt-[300px] xl:mt-[400px] drop-shadow-white'
-                        />
-                        <Image 
-                            src={`/logos/svelte.png`} width={220} height={42} alt={`svelte logo`}
-                            className='mt-[200px] md:mt-[450px] opacity-10 xl:mt-[325px] drop-shadow-white'
-                        />
-                </div>
+                {isShowing ? (
+                    <>
+                        <div className='
+                                px-[20px] 
+                                w-[25%] lg:w-[20%]
+                                flex flex-col items-center 
+                                border-x border-dashed border-slate-700
+                                animate-fadeIn fill-mode-both delay-1s
+                        '>
+                            <Image 
+                                src={`/logos/react.png`} width={183} height={38} alt={`react logo`}
+                                className='
+                                    animate-paddingAnim fill-mode-both delay-1s
+                                    mt-[450px] lg:mt-[600px] drop-shadow-white
+                                '
+                            />
+                            <Image src={`/logos/svelte.png`} width={220} height={42} alt={`svelte logo`}
+                                className='
+                                    animate-paddingAnim  fill-mode-both delay-1s
+                                    mt-[250px] opacity-40 drop-shadow-white
+                                '
+                            />
+                        </div>
+                        {/* Column 2 */}
+                        <div className='
+                            px-[20px] w-[25%] lg:w-[20%]
+                            flex flex-col items-center
+                            animate-fadeIn fill-mode-both delay-1s
+                        '>
+                            <Image 
+                                src={`/logos/nextjs.png`} width={183} height={64} alt={`svelte logo`}
+                                className='
+                                    animate-paddingAnim fill-mode-both delay-1s
+                                    mt-[550px] md:mt-[650px] drop-shadow-white
+                                '
+                            />
+                            <Image 
+                                src={`/logos/react.png`} width={183} height={38} alt={`react logo`}
+                                className='
+                                    animate-paddingAnim fill-mode-both delay-1s
+                                    mt-[200px] md:mt-[400px] opacity-30 drop-shadow-white
+                                '
+                            />
+                        </div>
+                        {/* Column 3 */}
+                        <div className='
+                                px-[20px] w-[25%] lg:w-[20%]
+                                flex flex-col items-center
+                                border-l border-dashed border-slate-700
+                                animate-fadeIn fill-mode-both delay-1s
+                            '>
+                                <Image 
+                                    src={`/logos/vue.png`} width={163} height={44} alt={`svelte logo`}
+                                    className='
+                                        animate-paddingAnim fill-mode-both delay-1s
+                                        mt-[500px] md:mt-[850px] opacity-40 drop-shadow-white
+                                    '
+                                />
+                        </div>
+                        {/* Column 4 */}
+                        <div className='
+                                px-[20px] w-[25%] lg:w-[20%]
+                                flex flex-col items-center
+                                border-x border-dashed border-slate-700
+                                animate-fadeIn fill-mode-both delay-1s
+                            '>
+                                <Image 
+                                    src={`/logos/nextjs.png`} width={183} height={64} alt={`svelte logo`}
+                                    className='
+                                        animate-paddingAnim fill-mode-both delay-1s
+                                        mt-[450px] md:mt-[350px] lg:mt-[650px]  xl:mt-[500px] drop-shadow-white
+                                    '
+                                />
+                                <Image 
+                                    src={`/logos/react.png`} width={183} height={38} alt={`react logo`}
+                                    className='
+                                        animate-paddingAnim fill-mode-both delay-1s
+                                        mt-[200px] md:mt-[300px] xl:mt-[400px] drop-shadow-white
+                                    '
+                                />
+                                <Image 
+                                    src={`/logos/svelte.png`} width={220} height={42} alt={`svelte logo`}
+                                    className='
+                                        animate-paddingAnim fill-mode-both delay-1s
+                                        mt-[200px] md:mt-[450px] opacity-10 xl:mt-[325px] drop-shadow-white
+                                    '
+                                />
+                        </div>
+                    </>
+                ) : null}
            </section>
 
            {/* Box for Mobile Logo animation  */}
