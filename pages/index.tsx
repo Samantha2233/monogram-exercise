@@ -13,7 +13,6 @@ export default function Home() {
         <title>Monogram Design Test</title>
         <meta name="description" content="Monogram design test" />
         <link rel="icon" href="/favicon.ico" />
-        {/* <link href="/dist/output.css" rel="stylesheet" /> */}
       </Head>
       <HeroSection/>
       <JavaScriptSection/>
