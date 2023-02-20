@@ -26,8 +26,7 @@ This has been an incredibly fun challenge to work on! First, I focused on laying
 - Audit score meters interpolating from 0 - 100 
 
 ## Next Steps
-- Animate Logos on desktop
-- Get vertical lines on Logo section to render all the way to the bottom of the squiggle
 - Update rotating TextBand to render svg logos instead
 - Improve lighting on the 3D sphere to include highlights
 - Animate the lego blocks falling into place 
+- Get vertical lines on Logo section to render all the way to the bottom of the squiggle
