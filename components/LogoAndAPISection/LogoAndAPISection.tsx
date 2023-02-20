@@ -20,7 +20,6 @@ interface LogoType {
 export function LogoAndAPISection() {    
     const [isShowing, setIsShowing] = useState(false);
 
-
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -57,7 +56,7 @@ export function LogoAndAPISection() {
                                 src={`/logos/react.png`} width={183} height={38} alt={`react logo`}
                                 className='
                                     animate-paddingAnim fill-mode-both delay-1s
-                                    mt-[450px] lg:mt-[600px] drop-shadow-white
+                                    mt-[450px] md:mt-[070px] lg:mt-[820px] xl:mt-[600px] drop-shadow-white
                                 '
                             />
                             <Image src={`/logos/svelte.png`} width={220} height={42} alt={`svelte logo`}
@@ -77,7 +76,7 @@ export function LogoAndAPISection() {
                                 src={`/logos/nextjs.png`} width={183} height={64} alt={`svelte logo`}
                                 className='
                                     animate-paddingAnim fill-mode-both delay-1s
-                                    mt-[550px] md:mt-[650px] drop-shadow-white
+                                    mt-[550px] md:mt-[550px] lg:mt-[750px] drop-shadow-white
                                 '
                             />
                             <Image 
@@ -114,7 +113,7 @@ export function LogoAndAPISection() {
                                     src={`/logos/nextjs.png`} width={183} height={64} alt={`svelte logo`}
                                     className='
                                         animate-paddingAnim fill-mode-both delay-1s
-                                        mt-[450px] md:mt-[350px] lg:mt-[650px]  xl:mt-[500px] drop-shadow-white
+                                        mt-[450px] md:mt-[350px] lg:mt-[750px]  xl:mt-[500px] drop-shadow-white
                                     '
                                 />
                                 <Image 
