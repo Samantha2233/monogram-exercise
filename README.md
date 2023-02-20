@@ -3,7 +3,7 @@
 
 [Deployed Link](https://monogram-exercise-seven.vercel.app/)
 
-Hello! My name is Sami :) I'm a front end developer with 3 years of professional experience. [Click here to view my Resume.](https://almond-event-90e.notion.site/Sami-Shackelford-3dacf921dc9c42c5b2eeeff475852a03)
+Hello! My name is Sami :) I'm a Front End Developer with 3 years of professional experience. [Click here to view my Resume.](https://almond-event-90e.notion.site/Sami-Shackelford-3dacf921dc9c42c5b2eeeff475852a03)
 
 This has been an incredibly fun challenge to work on! First, I focused on laying out the UI to match the mockups, then had a good time experimenting with adding animations through out the site along with an R3F element!
 
