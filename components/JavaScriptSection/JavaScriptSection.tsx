@@ -20,7 +20,7 @@ export function JavaScriptSection() {
                     </p>
                     {/* Retro Computer */}
                     <div className='relative flex justify-center'>
-                        <Image src='/retro-computer.png' width={786} height={852} alt='computer' className='w-[70%] ml-[-15px] lg:w-[786px] '/>
+                        <Image src='/retro-computer.png' width={786} height={852} alt='computer' className='ml-[-15px] w-[275px] sm:w-[450px] lg:w-[786px] '/>
                         <TypingAnimation />
                     </div>
                 </div>

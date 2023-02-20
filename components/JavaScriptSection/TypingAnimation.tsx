@@ -2,7 +2,11 @@ import { code } from './code'
 
 export const TypingAnimation = () => {
     return (
-        <div className='absolute top-[25px] left-[110px]  lg:top-[80px] lg:left-[130px]'>
+        <div className='absolute 
+            top-[25px] left-[40px]  
+            sm:top-[40px] sm:left-[70px] 
+            lg:top-[80px] lg:left-[130px]
+        '>
             {code.map((line, idx) => {
                 return (
                     <Line key={idx} text={line.text} pl={line.pl} delay={line.delay} />
@@ -21,9 +25,10 @@ interface LineProps {
 const Line = ({ text, pl = 0, delay  }: LineProps) => {
     let styles = `
         animate-type
-        max-w-min  pb-[1px] whitespace-nowrap overflow-hidden
-        text-[#44DBFF] tracking-[.005em] text-[3px] font-[Menlo]
-        lg:text-[7px] lg:pb-[5px]
+        max-w-min whitespace-nowrap overflow-hidden
+        text-[#44DBFF] tracking-[.005em]  font-[Menlo]
+        text-[2.5px] sm:text-[5px]  lg:text-[7px]
+        pb-[1px] lg:pb-[5px]
     `
     return (
             <p 
